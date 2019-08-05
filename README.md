@@ -2,6 +2,7 @@
 * gulp
 * scss
 * pug
+* babel
 
 ### 安装
 ```bash
@@ -11,5 +12,5 @@ npm install
 ### 运行
 ```bash
 npm run build  # build front end
-npm start
+npm start # develop watch
 ```

@@ -1,7 +1,7 @@
 {
-  "name": "one-minues",
+  "name": "html-page",
   "version": "1.0.0",
-  "description": "static html page",
+  "description": "html page project",
   "main": "app.js",
   "scripts": {
     "build": "gulp build",
