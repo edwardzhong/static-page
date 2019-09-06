@@ -29,8 +29,8 @@ function devJs(){
         // .pipe(sourcemaps.init())
         .pipe(babel({
             sourceMap: 'inline',
-            presets: ['@babel/env'],
-            plugins: ['@babel/transform-runtime']
+            // presets: ['@babel/env'],
+            // plugins: ['@babel/transform-runtime']
         }))
         .pipe(concat('index.min.js'))
         // .pipe(sourcemaps.write('.'))
@@ -43,8 +43,8 @@ function distJs(){
             minified: true,//压缩
             comments: false,
             sourceType: 'script',//No import/export statements allowed, and files are not in strict mode.
-            presets: ['@babel/env'],
-            plugins: ['@babel/transform-runtime']
+            // presets: ['@babel/env'],
+            // plugins: ['@babel/transform-runtime']
         }))
         .pipe(concat('index.min.js'))//合并
         .pipe(dest('dist'))
