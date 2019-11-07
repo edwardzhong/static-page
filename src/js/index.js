@@ -49,10 +49,7 @@ serNav.onclick = function(e) {
 };
 
 ~(function watchScrollTop() {
-    const st =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
+    const st = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     for (let i = 0; i < hs.length; i++) {
         if (st > hs[i] - 30) {
             select(as, i);
