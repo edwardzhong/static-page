@@ -94,3 +94,35 @@ driverlay.getElementsByClassName("close")[0].onclick = function(e) {
     modal.classList.remove("active");
     driverlay.classList.remove("active");
 };
+
+// (async()=>{
+//     const ret = await test();
+//     console.log(ret);
+// })()
+
+// class Foo{
+//     constructor(x){
+//         this.x= x;
+//     }
+    
+//     get X(){
+//         return this.x;
+//     }
+//     set X(value){
+//         this.x = value;
+//     }
+//     say(){
+//         console.log('foo');
+//     }
+// }
+
+// const foo = new Foo(1);
+// foo.say();
+
+// function test(){
+//     return new Promise(resolve=>{
+//         setTimeout(() => {
+//             resolve(111);
+//         }, 1000);
+//     })
+// }

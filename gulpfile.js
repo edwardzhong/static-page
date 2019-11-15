@@ -6,10 +6,8 @@ const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 const pug = require('gulp-pug');
-const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
-const minify = require("gulp-babel-minify");
 
 function clean(cb) {
     return del(['dist', 'src/css'], cb);
@@ -27,14 +25,12 @@ function scss() {
 
 function devJs(){
     return src('src/js/**/*.js')
-        // .pipe(sourcemaps.init())
         .pipe(babel({
             sourceMap: 'inline',
             // presets: ['@babel/env'],
             // plugins: ['@babel/transform-runtime']
         }))
         .pipe(concat('index.min.js'))
-        // .pipe(sourcemaps.write('.'))
         .pipe(dest('dist'))
 }
 
@@ -47,7 +43,6 @@ function distJs(){
             // presets: ['@babel/env'],
             // plugins: ['@babel/transform-runtime']
         }))
-        .pipe(minify())
         .pipe(concat('index.min.js'))//合并
         .pipe(dest('dist'))
 }
