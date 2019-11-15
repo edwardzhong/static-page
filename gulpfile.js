@@ -9,6 +9,7 @@ const pug = require('gulp-pug');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const minify = require("gulp-babel-minify");
 
 function clean(cb) {
     return del(['dist', 'src/css'], cb);
@@ -46,6 +47,7 @@ function distJs(){
             // presets: ['@babel/env'],
             // plugins: ['@babel/transform-runtime']
         }))
+        .pipe(minify())
         .pipe(concat('index.min.js'))//合并
         .pipe(dest('dist'))
 }
