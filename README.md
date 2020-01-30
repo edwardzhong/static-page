@@ -14,6 +14,6 @@ npm install
 
 ### 运行
 ```bash
-npm run build  # build front end
-npm start # develop watch
+npm start # develop
+npm run build  # build project
 ```

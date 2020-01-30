@@ -6,7 +6,7 @@ block js
     script(src="./index.min.js")
 block content    
     header
-        div.logo
+        .logo
         nav
             ul#nav
                 li
@@ -17,35 +17,35 @@ block content
                     a(href="#driver") 成为司机
                 li
                     a(href="#contact") 联系我们
-        div.version
+        .version
             select#version
                 option(value="1" selected) 中 文
                 option(value="2") English
-    div.pos#header
-    div.content
-        div.banner#banner
+    .pos#header
+    .content
+        .banner#banner
             h1
                 span.title One Minute
                 span.desc 干的就是跑腿的事儿
             p 温哥华最完善的同城跑腿和国际物流平台
-            div.btn#order 我要下单
-        div.duty
-            div.left
-            div.right
+            .btn#order 我要下单
+        .duty
+            .left
+            .right
             h2
                 p One Minute 使命
             p.sub 懒人神器，平均50分钟送达，足不出户满足用户任何需求。
             p.txt 以共享劳动力和众包理念，人人都可以注册成为司机，并未附近的人提供买、送、取、办等多样及时化服务，为中小型企业、电商、本地商户提供安全专业的高端配送服务。
-        div.service#service
+        .service#service
             h2
                 p One Minute 服务
-            div.wrap
-                div.inner
-                    div.item
-                        div.icon
+            .wrap
+                .inner
+                    .item
+                        .icon
                             i
                             p 代买
-                        div.con
+                        .con
                         ul.list
                             li 日化百货
                             li 生鲜食品
@@ -53,11 +53,11 @@ block content
                             li 咖啡
                             li 药瓶
                             li … …
-                    div.item
-                        div.icon
+                    .item
+                        .icon
                             i
                             p 代取
-                        div.con
+                        .con
                         ul.list
                             li 文件证件
                             li 鲜花蛋糕
@@ -65,11 +65,11 @@ block content
                             li 生鲜农产品
                             li 钥匙
                             li … …
-                    div.item
-                        div.icon
+                    .item
+                        .icon
                             i
                             p 代送
-                        div.con
+                        .con
                         ul.list
                             li 生活用品
                             li 办公用品
@@ -77,60 +77,60 @@ block content
                             li 药品
                             li 票据
                             li … …
-                    div.item
-                        div.icon
+                    .item
+                        .icon
                             i
                             p 接送
-                        div.con
+                        .con
                         ul.list
                             li 宠物同行
                             li 车内嗨歌
                             li 有奖活动
                             li … …
-        div.user 
+        .user 
             h2
                 p One Minute 用户使用流程
-            div.wrap
-                div.inner
-                    div.item
+            .wrap
+                .inner
+                    .item
                         i
                         p.title 打开
                         p.title One minute
-                        div.hr
+                        .hr
                         p.first 微信小程序
-                    div.arrow
-                    div.item
+                    .arrow
+                    .item
                         i
                         p.title 选择 
                         p.title 跑腿业务
-                        div.hr
+                        .hr
                         p 代买、代取、代送、
                         p 接送、城际配送
-                    div.arrow
-                    div.item
+                    .arrow
+                    .item
                         i
                         p.title 输入
                         p.title 服务地点
-                        div.hr
+                        .hr
                         p 备注您的特殊要求
                         p 或服务详情
-                    div.arrow
-                    div.item
+                    .arrow
+                    .item
                         i
                         p.title 下单
                         p.title 支付费用
-                        div.hr
+                        .hr
                         p 系统自动推送订单
                         p 60s极速接单
-                    div.arrow
-                    div.item
+                    .arrow
+                    .item
                         i
                         p.title 司机接单
                         p.title 开始服务
-                        div.hr
+                        .hr
                         p 司机上门
                         p  一对一服务
-        div.driver
+        .driver
             h2
                 p#driver One Minute 司机服务流程
             ul#driverSer
@@ -138,160 +138,160 @@ block content
                 li(data-i="1") 代取服务
                 li(data-i="2") 代送服务
                 li(data-i="3") 接送服务
-            div.wrap#driverCon
-                div.inner(class="active")
-                    div.item
-                        div.img
+            .wrap#driverCon
+                .inner(class="active")
+                    .item
+                        .img
                             img(src="./img/one.png")
                             i 1
-                        div.bot
+                        .bot
                             p 联系下单人，确定购买地点和要求
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dm2.png")
                             i 2
-                        div.bot
+                        .bot
                             p 前往指定地点购买，索要购物小票
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dm3.png")
                             i 3
-                        div.bot
+                        .bot
                             p 购买成功后，查看订单确认收货地点
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/four.png")
                             i 4
-                        div.bot
+                        .bot
                             p 前往收货地点，获取确认码并完成订单
-                div.inner
-                    div.item
-                        div.img
+                .inner
+                    .item
+                        .img
                             img(src="./img/one.png")
                             i 1
-                        div.bot
+                        .bot
                             p 联系下单人，确认取货地点和要求
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dq2.png")
                             i 2
-                        div.bot
+                        .bot
                             p 前往取货地点拿取物品
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dq3.png")
                             i 3
-                        div.bot
+                        .bot
                             p 取货完毕后，查看订单确认收货地点
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/four.png")
                             i 4
-                        div.bot
+                        .bot
                             p 前往收货地点，获取确认码并完成订单
-                div.inner
-                    div.item
-                        div.img
+                .inner
+                    .item
+                        .img
                             img(src="./img/one.png")
                             i 1
-                        div.bot
+                        .bot
                             p 联系下单人，确认取货地点和要求
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dq2.png")
                             i 2
-                        div.bot
+                        .bot
                             p 前往取货地点拿取物品
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/dq3.png")
                             i 3
-                        div.bot
+                        .bot
                             p 取货完毕后，查看订单确认收货地点
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/four.png")
                             i 4
-                        div.bot
+                        .bot
                             p 前往收货地点，获取确认码并完成订单
-                div.inner
-                    div.item
-                        div.img
+                .inner
+                    .item
+                        .img
                             img(src="./img/one.png")
                             i 1
-                        div.bot
+                        .bot
                             p 联系下单人，确认出发地点
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/js2.png")
                             i 2
-                        div.bot
+                        .bot
                             p 前往出发地点接乘客
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/js3.png")
                             i 3
-                        div.bot
+                        .bot
                             p 接到乘客后，查看订单确认目的地
-                    div.item
-                        div.img
+                    .item
+                        .img
                             img(src="./img/js4.png")
                             i 4
-                        div.bot
+                        .bot
                             p 前往目的地，完成订单
-            div.btn#become 成为司机
-        div.code
-            div.wrap
-                div.item
+            .btn#become 成为司机
+        .code
+            .wrap
+                .item
                     p 用户端小程序
-                    div.img
+                    .img
                         img(src="./img/code.png")
-                div.item
+                .item
                     p 司机端APP（Android）
-                    div.img
+                    .img
                         img(src="./img/code.png")
-                div.item
+                .item
                     p 司机端APP（ios）
-                    div.img
+                    .img
                         img(src="./img/code.png")
-        div.contact#contact 
+        .contact#contact 
             h2
                 p 联系我们
             p.sub 无论您是商家、司机或是平台的用户，随时都可以通过电话、邮箱或在线客服与我们联系
-            div.wrap
-                div.left
+            .wrap
+                .left
                     p 24小时热线电话：(778)9268513
                     p 邮箱地址：oneminutedliverycs@gmail.com
                     p.line 在线客服
-                    div.img
+                    .img
                         img(src="./img/code.png")
                 ul.right
                     li 我要成为合作商家，因为One minute可以为我宣传推广！
                     li 我要成为司机，因为One minute可以为我提供客观的收入！
                     li 我要成为会员，因为One minute的服务简直太贴心了！
     footer 版权号
-    div.modal
-    div.order
-        div.close ×
-        div.logo
-        div.max
-            div.img
+    .modal
+    .order
+        .close ×
+        .logo
+        .max
+            .img
                 img(src="./img/code.png")
-            div.wrap
+            .wrap
                 p.title 微信扫一扫左侧二维码
                 p.sub 选择需要的服务即可开始下单
-        div.sm
+        .sm
             p 微信小程序搜索“One minute” 或
             p 点击公众号菜单【我要下单】
             p 选择需要的服务即可开始下单
-    div.become
-        div.close ×
-        div.logo
-        div.inner
-            div.body
-                div.item
-                    div.step
-                        div.inner
+    .become
+        .close ×
+        .logo
+        .inner
+            .body
+                .item
+                    .step
+                        .inner
                             p.num 01
                             p step
                     i
@@ -299,17 +299,17 @@ block content
                     p.desc 电话：(778)9268513
                     p.desc 邮箱地址：oneminutedliverycs@gmail.com
 
-                div.item
-                    div.step
-                        div.inner
+                .item
+                    .step
+                        .inner
                             p.num 02
                             p step
                     i
                     p.desc 平台对申请人资料了解后
                     p.desc 统一安排线下培训
-                div.item
-                    div.step
-                        div.inner
+                .item
+                    .step
+                        .inner
                             p.num 03
                             p step
                     i
