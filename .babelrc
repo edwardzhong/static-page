@@ -1,16 +1,16 @@
 {
-    "presets": [
-        [
-            "@babel/preset-env",
-            {
-                "useBuiltIns": "entry"
-            }
-        ],
-        [
-            "minify"
-        ]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
     ],
-    "plugins": [
-        "@babel/plugin-transform-runtime"
+    [
+      "minify"
     ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
 }
