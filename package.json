@@ -1,7 +1,7 @@
 {
-  "name": "html-page",
+  "name": "static-html",
   "version": "1.0.0",
-  "description": "html page project",
+  "description": "static html project",
   "main": "app.js",
   "scripts": {
     "build": "gulp build",
