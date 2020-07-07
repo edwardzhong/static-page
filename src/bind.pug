@@ -1,0 +1,24 @@
+extends ./partial/layout.pug
+block css
+	link(href='./index.css' rel='stylesheet')
+block content
+	.bind
+		+pageheader('绑定收款方式')
+		nav
+			a(href="bind-wechat.html")
+				i.icon-wechat
+				p 微信支付
+				.right
+			a(href="bind-alipay.html")
+				i.icon-alipay
+				p 支付宝
+				.right
+			a(href="bind-bank.html")
+				i.icon-card
+				p 银行卡
+				.right
+			a(href="bind-usdt.html")
+				.icons-wrap
+					i.icon-usdt
+				p 绑定USDT钱包
+				.right

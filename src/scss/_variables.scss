@@ -1,0 +1,48 @@
+$fontColor: #666;
+$fontGray: #999;
+$bg: #141414;
+$bgForm: #212121;
+$bgBlock: #1e1e1e;
+$cyan: #00bfc2;
+
+$green: #11be74;
+$blue: #1478ff;
+$red: #d14c3f;
+$blueDark: #2f64e8;
+
+$mobileWidth: 768px;
+
+@mixin imgCover($url) {
+	background: url($url) no-repeat 50% / cover;
+}
+
+@mixin imgContain($url) {
+	background: url($url) no-repeat 50% / contain;
+}
+
+@mixin nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin nowraps($num: 2) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: $num;
+	overflow: hidden;
+}
+
+@mixin layout {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 90%;
+	min-width: 1000px;
+}
+
+@mixin sm {
+	@media screen and (max-width: $mobileWidth) {
+		@content;
+	}
+}

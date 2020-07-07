@@ -20,6 +20,7 @@
     "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.1",
     "babel-preset-minify": "^0.5.1",
+    "browser-sync": "^2.26.7",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -30,7 +31,8 @@
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "postcss-px2rem": "^0.3.0"
   },
   "postcss": {
     "plugins": {

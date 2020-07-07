@@ -6,6 +6,8 @@
 * scss
 * pug
 * babel
+* px2rem
+* browser-sync
 
 ### 安装
 ```bash

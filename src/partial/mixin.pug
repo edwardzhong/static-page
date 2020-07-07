@@ -1,0 +1,19 @@
+mixin pageheader(title='')
+  header.header
+    a(href="javascript:;")
+      i.icon-left
+    if title != ''
+      h1 #{title}
+
+mixin pagenav(index=4)
+  footer.footer
+    a.menu(class=index==0?'active':'' href=index==0?'javascript:;':'./index.html')
+      div
+    a.menu(class=index==1?'active':'' href=index==1?'javascript:;':'./market.html')
+      div
+    a.menu(class=index==2?'active':'' href=index==2?'javascript:;':'./shop.html')
+      div
+    a.menu(class=index==3?'active':'' href=index==3?'javascript:;':'./message.html')
+      div
+    a.menu(class=index==4?'active':'' href=index==4?'javascript:;':'./my.html')
+      div

@@ -1,0 +1,100 @@
+extends ./partial/layout.pug
+block css
+	link(href='./index.css' rel='stylesheet')
+block js
+	script(src="./detail.js")
+block content
+	.good-detail
+		.close-wrap
+			i.icon-close
+		.banner-list
+			.banner(style={'background-image':'url(./img/good.jpg)'})
+			.banner(style={'background-image':'url(./img/good2.jpg)'})
+			.banner(style={'background-image':'url(./img/good3.jpg)'})
+			ul.nav-list
+				li
+				li
+				li
+		.info-wrap
+			.info
+				h1 Apple iPad Pro 11英寸平板电脑2020年新款(256G WLAN版/全面屏…
+				.price-block
+					.price-wrap
+						h2.price $ 10,000.00
+						p 限时抢购价
+					.logo
+						img(src="./img/logo.png")
+				.spec-block
+					p
+						span 规格
+						b 64G
+					p
+						span 运费
+						b 包邮
+			footer
+				.editor 
+					strong 此处图片详情
+					.dia
+						a(href="javascript:;") 收货地址提示
+						a(href="javascript:;") 余额不足提示
+						a(href="javascript:;") 参与抢购提示
+						a(href="javascript:;") 确认收货提示
+				.btns-pos
+	.good-btns
+		button.primary-btn 去付款
+	.good-btns
+		button.primary-btn 发起抢购
+		button.cyan-btn 加入抢购
+	.popup
+		.add-addr-form
+			header
+				h3 确认收货地址
+				.close(data-tag="close")
+			a(href="javascript:;").addr-block
+				.icons-addr
+				p 新增收货地址
+				.right
+			.cyan-btn(data-tag="close") 取消
+	.backdrop
+	.popup
+		.tip-form
+			header
+				h3 提示
+				.close(data-tag="close")
+			.wrap-block
+				.icons-wrap
+					i.icon-bell
+			h4 当前余额不足，请充值
+			button.primary-btn(data-tag="close") 去充值
+	.popup
+		.tip-form
+			header
+				h3 提示
+				.close(data-tag="close")
+			.wrap-block
+				.icons-wrap.lock
+					i.icon-lock
+			h4 正在参与抢购，结束后才能再次参与抢购
+			button.cyan-btn(data-tag="close") 点击查看
+	.popup
+		.tip-form
+			header
+				h3 确认收货地址
+			.wrap-block
+				.icons-wrap.addr
+					i.icon-addr
+			.contact-block
+				div
+					p
+						strong 张三
+						b 130*****3131314
+					p.addr 北京市石景山区晋元庄路5号
+				.right
+			.btns
+				button.primary-btn(data-tag="close") 去抢购
+				button.cyan-btn(data-tag="close") 取消
+			.next-wrap
+				input#switch(type="checkbox" checked)
+				label.switch(for="switch")
+				span 结束抢购后，自动加入下一场抢购
+

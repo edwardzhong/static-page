@@ -1,0 +1,101 @@
+extends ./partial/layout.pug
+block css
+	link(href='./index.css' rel='stylesheet')
+block content
+	.my
+		header
+			.user
+				.info
+					h2 阳光洒在脸上
+					i.icon-code
+				.flag 
+					i.icon-flag
+					span &nbsp;队长
+			a(href="javascript:;").avatar-wrap
+				.avatar(style={'background-image':'url(./img/avatar.png)'})
+				i.icon-right
+		.summary
+			h3 我的资产
+			ul.funds
+				li 
+					h4 余额
+					p
+						span ¥
+						strong 5,000.00
+					a(href="javascript:;") 
+						span 立即充值
+						.right
+				li
+				li 
+					h4 云呗
+					p 
+						strong 320.00
+					a(href="javascript:;") 
+						span 立即充值
+						.right
+			ul.summary-list
+				li
+					h5 贡献者
+					p 1200.00
+				li 
+					h5 消费积分
+					p 300.00
+				li
+					h5 保证金
+					p 5000.00
+		ul.menus
+			li
+				a(href="javascript:;").menu-icon
+					i.icon-lock
+				p 抢购记录
+			li
+				a(href="javascript:;").menu-icon
+					i.icon-collect
+				p 积分转换
+				p 贡献值转云呗
+			li
+				a(href="javascript:;").menu-icon
+					i.icon-transfer
+				p 云呗转账
+				p 云呗转增
+			li
+				a(href="javascript:;").menu-icon
+					i.icon-detail
+				p 收支明细
+		h3.service-title 设置与服务
+		.service-block
+			a(href="javascript:;") 
+				.service-icon(style={background: '#bc697b'})
+					i.icon-order
+				.desc
+					h5 我的订单
+					p 购物记录
+			a(href="javascript:;") 
+				.service-icon(style={background: '#9b47ab'})
+					i.icon-addr
+				.desc
+					h5 收货地址
+					p 立即绑定
+		.service-block
+			a(href="javascript:;") 
+				.service-icon(style={background: '#19d778'})
+					i.icon-cash
+				.desc
+					h5 收款方式
+					p 立即绑定
+			a(href="javascript:;") 
+				.service-icon(style={background: '#335cec'})
+					i.icon-set
+				.desc
+					h5 设置中心
+					p 点击查看
+		.service-block
+			a(href="javascript:;") 
+				.service-icon(style={background: '#da8d1c'})
+					i.icon-help
+				.desc
+					h5 帮助中心
+					p 点击查看
+		.footer-pos
+	+pagenav(4)
+

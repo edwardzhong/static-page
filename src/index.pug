@@ -1,317 +1,46 @@
-extends ./layout.pug
+extends ./partial/layout.pug
 block css
-    link(href='./base.min.css' rel='stylesheet')
-    link(href='./index.min.css' rel='stylesheet')
+	link(href='./index.css' rel='stylesheet')
 block js
-    script(src="./index.min.js")
-block content    
-    header
-        .logo
-        nav
-            ul#nav
-                li
-                    a(href="#header") 首页
-                li 
-                    a(href="#service") 服务介绍
-                li
-                    a(href="#driver") 成为司机
-                li
-                    a(href="#contact") 联系我们
-        .version
-            select#version
-                option(value="1" selected) 中 文
-                option(value="2") English
-    .pos#header
-    .content
-        .banner#banner
-            h1
-                span.title One Minute
-                span.desc 干的就是跑腿的事儿
-            p 温哥华最完善的同城跑腿和国际物流平台
-            .btn#order 我要下单
-        .duty
-            .left
-            .right
-            h2
-                p One Minute 使命
-            p.sub 懒人神器，平均50分钟送达，足不出户满足用户任何需求。
-            p.txt 以共享劳动力和众包理念，人人都可以注册成为司机，并未附近的人提供买、送、取、办等多样及时化服务，为中小型企业、电商、本地商户提供安全专业的高端配送服务。
-        .service#service
-            h2
-                p One Minute 服务
-            .wrap
-                .inner
-                    .item
-                        .icon
-                            i
-                            p 代买
-                        .con
-                        ul.list
-                            li 日化百货
-                            li 生鲜食品
-                            li 烟酒
-                            li 咖啡
-                            li 药瓶
-                            li … …
-                    .item
-                        .icon
-                            i
-                            p 代取
-                        .con
-                        ul.list
-                            li 文件证件
-                            li 鲜花蛋糕
-                            li 贵重物品
-                            li 生鲜农产品
-                            li 钥匙
-                            li … …
-                    .item
-                        .icon
-                            i
-                            p 代送
-                        .con
-                        ul.list
-                            li 生活用品
-                            li 办公用品
-                            li 海鲜水产
-                            li 药品
-                            li 票据
-                            li … …
-                    .item
-                        .icon
-                            i
-                            p 接送
-                        .con
-                        ul.list
-                            li 宠物同行
-                            li 车内嗨歌
-                            li 有奖活动
-                            li … …
-        .user 
-            h2
-                p One Minute 用户使用流程
-            .wrap
-                .inner
-                    .item
-                        i
-                        p.title 打开
-                        p.title One minute
-                        .hr
-                        p.first 微信小程序
-                    .arrow
-                    .item
-                        i
-                        p.title 选择 
-                        p.title 跑腿业务
-                        .hr
-                        p 代买、代取、代送、
-                        p 接送、城际配送
-                    .arrow
-                    .item
-                        i
-                        p.title 输入
-                        p.title 服务地点
-                        .hr
-                        p 备注您的特殊要求
-                        p 或服务详情
-                    .arrow
-                    .item
-                        i
-                        p.title 下单
-                        p.title 支付费用
-                        .hr
-                        p 系统自动推送订单
-                        p 60s极速接单
-                    .arrow
-                    .item
-                        i
-                        p.title 司机接单
-                        p.title 开始服务
-                        .hr
-                        p 司机上门
-                        p  一对一服务
-        .driver
-            h2
-                p#driver One Minute 司机服务流程
-            ul#driverSer
-                li.active(data-i="0") 代买服务
-                li(data-i="1") 代取服务
-                li(data-i="2") 代送服务
-                li(data-i="3") 接送服务
-            .wrap#driverCon
-                .inner(class="active")
-                    .item
-                        .img
-                            img(src="./img/one.png")
-                            i 1
-                        .bot
-                            p 联系下单人，确定购买地点和要求
-                    .item
-                        .img
-                            img(src="./img/dm2.png")
-                            i 2
-                        .bot
-                            p 前往指定地点购买，索要购物小票
-                    .item
-                        .img
-                            img(src="./img/dm3.png")
-                            i 3
-                        .bot
-                            p 购买成功后，查看订单确认收货地点
-                    .item
-                        .img
-                            img(src="./img/four.png")
-                            i 4
-                        .bot
-                            p 前往收货地点，获取确认码并完成订单
-                .inner
-                    .item
-                        .img
-                            img(src="./img/one.png")
-                            i 1
-                        .bot
-                            p 联系下单人，确认取货地点和要求
-                    .item
-                        .img
-                            img(src="./img/dq2.png")
-                            i 2
-                        .bot
-                            p 前往取货地点拿取物品
-                    .item
-                        .img
-                            img(src="./img/dq3.png")
-                            i 3
-                        .bot
-                            p 取货完毕后，查看订单确认收货地点
-                    .item
-                        .img
-                            img(src="./img/four.png")
-                            i 4
-                        .bot
-                            p 前往收货地点，获取确认码并完成订单
-                .inner
-                    .item
-                        .img
-                            img(src="./img/one.png")
-                            i 1
-                        .bot
-                            p 联系下单人，确认取货地点和要求
-                    .item
-                        .img
-                            img(src="./img/dq2.png")
-                            i 2
-                        .bot
-                            p 前往取货地点拿取物品
-                    .item
-                        .img
-                            img(src="./img/dq3.png")
-                            i 3
-                        .bot
-                            p 取货完毕后，查看订单确认收货地点
-                    .item
-                        .img
-                            img(src="./img/four.png")
-                            i 4
-                        .bot
-                            p 前往收货地点，获取确认码并完成订单
-                .inner
-                    .item
-                        .img
-                            img(src="./img/one.png")
-                            i 1
-                        .bot
-                            p 联系下单人，确认出发地点
-                    .item
-                        .img
-                            img(src="./img/js2.png")
-                            i 2
-                        .bot
-                            p 前往出发地点接乘客
-                    .item
-                        .img
-                            img(src="./img/js3.png")
-                            i 3
-                        .bot
-                            p 接到乘客后，查看订单确认目的地
-                    .item
-                        .img
-                            img(src="./img/js4.png")
-                            i 4
-                        .bot
-                            p 前往目的地，完成订单
-            .btn#become 成为司机
-        .code
-            .wrap
-                .item
-                    p 用户端小程序
-                    .img
-                        img(src="./img/code.png")
-                .item
-                    p 司机端APP（Android）
-                    .img
-                        img(src="./img/code.png")
-                .item
-                    p 司机端APP（ios）
-                    .img
-                        img(src="./img/code.png")
-        .contact#contact 
-            h2
-                p 联系我们
-            p.sub 无论您是商家、司机或是平台的用户，随时都可以通过电话、邮箱或在线客服与我们联系
-            .wrap
-                .left
-                    p 24小时热线电话：(778)9268513
-                    p 邮箱地址：oneminutedliverycs@gmail.com
-                    p.line 在线客服
-                    .img
-                        img(src="./img/code.png")
-                ul.right
-                    li 我要成为合作商家，因为One minute可以为我宣传推广！
-                    li 我要成为司机，因为One minute可以为我提供客观的收入！
-                    li 我要成为会员，因为One minute的服务简直太贴心了！
-    footer 版权号
-    .modal
-    .order
-        .close ×
-        .logo
-        .max
-            .img
-                img(src="./img/code.png")
-            .wrap
-                p.title 微信扫一扫左侧二维码
-                p.sub 选择需要的服务即可开始下单
-        .sm
-            p 微信小程序搜索“One minute” 或
-            p 点击公众号菜单【我要下单】
-            p 选择需要的服务即可开始下单
-    .become
-        .close ×
-        .logo
-        .inner
-            .body
-                .item
-                    .step
-                        .inner
-                            p.num 01
-                            p step
-                    i
-                    p.desc 通过电话或邮件申请成为司机
-                    p.desc 电话：(778)9268513
-                    p.desc 邮箱地址：oneminutedliverycs@gmail.com
-
-                .item
-                    .step
-                        .inner
-                            p.num 02
-                            p step
-                    i
-                    p.desc 平台对申请人资料了解后
-                    p.desc 统一安排线下培训
-                .item
-                    .step
-                        .inner
-                            p.num 03
-                            p step
-                    i
-                    p.desc 签约后分配司机账户
-                    p.desc 申请人即可下载App正式接单
+	script(src="./index.js")
+block content
+	.index
+		h1 首页
+		p.append 已为您推荐如下好物
+		.shopping-pos
+		ul.good-list
+			li
+				.img-wrap
+					img(src='./img/good2.jpg')
+				.good-info
+					h2 Apple iPad Pro 11英寸平板电脑 020年新款(256G WLAN版/全面屏)
+					p.price 价格&nbsp;
+						span ¥1999
+					.primary-btn 立即抢购
+			li
+				.img-wrap
+					img(src='./img/good2.jpg')
+				.good-info
+					h2 Apple iPad Pro 11英寸平板电脑 020年新款(256G WLAN版/全面屏)
+					p.price 价格&nbsp;
+						span ¥1999
+					.primary-btn 立即抢购
+			li
+				.img-wrap
+					img(src='./img/good2.jpg')
+				.good-info
+					h2 Apple iPad Pro 11英寸平板电脑 020年新款(256G WLAN版/全面屏)
+					p.price 价格&nbsp;
+						span ¥1999
+					.primary-btn 立即抢购
+			li
+				.img-wrap
+					img(src='./img/good2.jpg')
+				.good-info
+					h2 Apple iPad Pro 11英寸平板电脑 020年新款(256G WLAN版/全面屏)
+					p.price 价格&nbsp;
+						span ¥1999
+					.primary-btn 立即抢购
+		.footer-pos
+	.shopping 正在抢购 14:20
+	+pagenav(0)

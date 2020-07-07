@@ -1,0 +1,19 @@
+include mixin.pug
+doctype html
+html(lang="en")
+	head
+		include ./meta.pug
+		title #{title}
+		style
+			include ../plugins/normalize.css
+		script
+			include ../plugins/flexible.js
+		link(href='./font/iconfont.css' rel='stylesheet')
+		block css
+	body
+		.content
+			block content
+		script(src="https://cdn.jsdelivr.net/npm/better-scroll")
+		script
+			include ./scroll.js
+		block js

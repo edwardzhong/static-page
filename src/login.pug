@@ -1,0 +1,26 @@
+extends ./partial/layout.pug
+block css
+	link(href='./index.css' rel='stylesheet')
+block content    
+	.login
+		.lang
+			i.icon-global
+			span 中
+			span 俄
+			span 日
+			span 韩
+		.login-form
+			h2 欢迎加入U资产钱包
+			p U资产即将席卷全球
+			.form-field
+				input.input(placeholder="请输入账户或用户名")
+				.border
+			.form-field
+				input.input(type="password" placeholder="请输入登录密码")
+				.border
+			.btns
+				button.primary-btn.disable
+					span 登录
+					i.icon-arrow-right
+				a.btn(href="register.html") 注册
+			footer &copy; 2011-2020 U资产.All Rights Reserved
