@@ -1,5 +1,5 @@
 ## 静态html页面 项目模版
-* async, class 语法 无法引入 babel 的 runtime-helper
+* @babel/plugin-transform-runtime 会使 async, class 语法 无法引入 babel 的 runtime-helper
 
 ### Based on the following
 * gulp
