@@ -46,3 +46,7 @@ $mobileWidth: 768px;
 		@content;
 	}
 }
+
+@function vw($px) {
+	@return ($px / 1920) * 100vw;
+}
